@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+void main()
+{
+    int i, j, row;
+    printf("please enter your num: ");
+    scanf("%d", &row);
+    for (i = 1; i <= row; i++)
+    {
+        for (j = row+1 - i; j > 0; j--)
+        {
+            printf("*");
+        }
+        for (j = i - 1; j > 0; j--)
+        {
+            printf("  ");
+        }
+        for (j = row+1 - i; j > 0; j--)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+}
